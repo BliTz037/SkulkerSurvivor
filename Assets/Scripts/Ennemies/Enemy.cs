@@ -8,7 +8,7 @@ public enum EnemyState
     Attack
 }
 
-public class EnemyAi : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public NavMeshAgent Agent;
     public Transform Player;
