@@ -7,12 +7,14 @@ public class ShootHandler : MonoBehaviour
     public GameObject BulletPrefab;
 
     public Transform BulletSpawnPoint;
-    
+
     public Transform CharacterPosition;
 
-    public float BulletSpeed = 1000f;
+    public float BulletSpeed = 30f;
 
     public float FireRate = 0.5f;
+
+    public float BulletDamage = 1f;
 
     private float _nextFire = 0f;
 
@@ -28,6 +30,8 @@ public class ShootHandler : MonoBehaviour
             bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * BulletSpeed, ForceMode.Impulse);
 
             Destroy(bullet, 2.0f);
-        }  
+        }
     }
+
+    
 }

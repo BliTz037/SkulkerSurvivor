@@ -2661,6 +2661,7 @@ GameObject:
   - component: {fileID: 7673487251737792169}
   - component: {fileID: 7673487251737792168}
   - component: {fileID: 7673487251737792170}
+  - component: {fileID: 7673487251737792171}
   m_Layer: 0
   m_Name: HPCharacter
   m_TagString: Untagged
@@ -3524,6 +3525,27 @@ MonoBehaviour:
   CharacterPosition: {fileID: 7673487250551255329}
   BulletSpeed: 30
   FireRate: 0.5
+  BulletDamage: 3
+--- !u!114 &7673487251737792171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673487250551680257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1efaedb5f7207d34699d8cf215d05230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletPrefab: {fileID: 3640230379224680862, guid: 0e64f57b0254b0b418f6e0597e05dcbc,
+    type: 3}
+  BulletSpawnPoint: {fileID: 7673487250551255389}
+  CharacterPosition: {fileID: 7673487250551255329}
+  AttackRate: 1.5
+  NumberBullets: 10
+  BulletSpeed: 30
+  BulletDamage: 0.5
 --- !u!1 &8944336656349189697
 GameObject:
   m_ObjectHideFlags: 0

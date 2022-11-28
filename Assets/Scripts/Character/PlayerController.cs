@@ -14,8 +14,6 @@ public class PlayerController : MonoBehaviour
 
 	private Vector3 playerVelocity;
 
-	private float gravityValue = -9.81f;
-
 	private bool _isShooting = false;
 
 	private ShootHandler _shootHandler;
@@ -91,7 +89,7 @@ public class PlayerController : MonoBehaviour
 			playerVelocity.y = 0f;
 		}
 
-		playerVelocity.y += gravityValue * Time.deltaTime;
+		playerVelocity.y += -9.81f * Time.deltaTime;
 		controller.Move(playerVelocity * Time.deltaTime);
 	}
 
