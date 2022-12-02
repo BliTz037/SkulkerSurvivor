@@ -8,10 +8,10 @@ public class BoostManager : MonoBehaviour
 
     public BoostType[] GenerateRandomBoosts()
     {
-        BoostType[] boosts = new BoostType[3];
+        BoostType[] boosts = new BoostType[2];
         List<BoostType> generatedBoosts = new List<BoostType>();
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 2; i++)
         {
             BoostType randomBoost = GetRandomBoost();
             if (!generatedBoosts.Contains(randomBoost))
