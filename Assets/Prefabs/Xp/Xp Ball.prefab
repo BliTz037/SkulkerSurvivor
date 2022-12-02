@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7729107858098069879}
   - component: {fileID: 7729107858098069876}
   - component: {fileID: 7729107858098069877}
+  - component: {fileID: -4587236554723526156}
   m_Layer: 0
   m_Name: Xp Ball
-  m_TagString: Untagged
+  m_TagString: Xp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,5 +96,18 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 5.7609954
+  m_Center: {x: 0.23219146, y: 3.169746, z: 0}
+--- !u!114 &-4587236554723526156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7729107858098069834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fb1ce2ca4509445ba2a7cfe126a1e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XpValue: 10
