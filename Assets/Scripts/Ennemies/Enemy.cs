@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
 {
     public NavMeshAgent Agent;
     public Transform Player;
+    private Animator _animator;
     public LayerMask WhatIsGround, WhatIsPlayer;
 
 
@@ -27,8 +28,9 @@ public class Enemy : MonoBehaviour
 
     void Awake()
     {
-        Player = GameObject.Find("Player").gameObject.transform;
+        Player = GameObject.FindGameObjectWithTag("Player").gameObject.transform;
         Agent = GetComponent<NavMeshAgent>();
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -44,11 +46,13 @@ public class Enemy : MonoBehaviour
 
     private void ChasePlayer()
     {
+        _animator.SetTrigger("Run");
         Agent.SetDestination(Player.position);
     }
 
     private void AttackPlayer()
     {
+        _animator.SetTrigger("Attack");
         if (AlreadyAttack)
             return;
         Debug.Log("Attack !");
