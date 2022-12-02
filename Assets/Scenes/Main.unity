@@ -126,6 +126,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: aceb1992c5f8f204bacc81fc24deb68f, type: 2}
+--- !u!1001 &687546590
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 578376449398627443, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 578376449398627443, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578376449398627443, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578376449398627443, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578376449398627443, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 578376449398627443, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578376449398627443, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578376449398627443, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578376449398627443, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578376449398627443, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578376449398627443, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493914613880827488, guid: 2a6f9159622b4e843a3f40d6bd899899,
+        type: 3}
+      propertyPath: m_Name
+      value: Zombie
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a6f9159622b4e843a3f40d6bd899899, type: 3}
 --- !u!1 &795372761
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,7 +528,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9882567, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2527,6 +2596,8 @@ GameObject:
   - component: {fileID: 7673487251737792168}
   - component: {fileID: 7673487251737792170}
   - component: {fileID: 7673487251737792171}
+  - component: {fileID: 7673487251737792173}
+  - component: {fileID: 7673487251737792172}
   m_Layer: 6
   m_Name: HPCharacter
   m_TagString: Player
@@ -3411,6 +3482,33 @@ MonoBehaviour:
   NumberBullets: 0
   BulletSpeed: 30
   BulletDamage: 0.5
+--- !u!114 &7673487251737792172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673487250551680257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d3a0f20251d1914583a917aca4cb60b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentLevel: 1
+  CurrentXp: 0
+  XpToNextLevel: 100
+--- !u!114 &7673487251737792173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673487250551680257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bb6482c96d5cb44af8a89f707c2202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8944336656349189697
 GameObject:
   m_ObjectHideFlags: 0
