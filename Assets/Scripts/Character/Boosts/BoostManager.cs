@@ -1,15 +1,15 @@
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class BoostManager : MonoBehaviour
 {
-    private BoostType[] _boostTypes = { BoostType.Speed, BoostType.AttackSpeed, BoostType.Damage, BoostType.SpecialAttack };
+    [SerializeField]
+    private BoostType[] _boostTypes = { BoostType.Life, BoostType.Speed, BoostType.AttackSpeed, BoostType.Damage, BoostType.SpecialAttack };
 
     public BoostType[] GenerateRandomBoosts()
     {
         BoostType[] boosts = new BoostType[2];
-        List<BoostType> generatedBoosts = new List<BoostType>();
+        List<BoostType> generatedBoosts = new();
 
         for (int i = 0; i < 2; i++)
         {
@@ -51,6 +51,8 @@ public class BoostManager : MonoBehaviour
     {
         switch (boost)
         {
+            case BoostType.Life:
+                break;
             case BoostType.Speed:
                 break;
             case BoostType.AttackSpeed:
