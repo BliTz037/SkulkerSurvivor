@@ -29,7 +29,7 @@ public class ShootHandler : MonoBehaviour
 
             bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * BulletSpeed, ForceMode.Impulse);
 
-            Destroy(bullet, 2.0f);
+            Destroy(bullet, 4.0f);
         }
     }
 
