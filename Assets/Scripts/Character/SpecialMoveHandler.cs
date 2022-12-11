@@ -50,7 +50,7 @@ public class SpecialMoveHandler : MonoBehaviour
 
             angle += angleStep;
 
-            Destroy(bullet, 2.0f);
+            Destroy(bullet, 4.0f);
         }
     }
 }
