@@ -10,6 +10,8 @@ public class ShootHandler : MonoBehaviour
 
     public Transform CharacterPosition;
 
+    public AudioClip ShootSound;
+
     public float BulletSpeed = 30f;
 
     private float _nextFire = 0f;
@@ -25,6 +27,7 @@ public class ShootHandler : MonoBehaviour
         if (Time.time > _nextFire)
         {
             _nextFire = Time.time + _stats.FireRate;
+            SoundManager.Instance.PlaySound(ShootSound);
 
             var bullet = Instantiate(BulletPrefab, BulletSpawnPoint.position, CharacterPosition.rotation);
 

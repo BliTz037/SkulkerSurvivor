@@ -296,7 +296,7 @@ RectTransform:
   m_Children:
   - {fileID: 1421236083}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -696,6 +696,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954062423}
   m_CullTransparentMesh: 1
+--- !u!1001 &1076688003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3913145835455024672, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: db1c0805e1ce99341b027d566ba24c36, type: 3}
+    - target: {fileID: 3913145836561679424, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913145836561679424, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 404.20084
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913145836561679424, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 338.98093
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913145836561679424, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.105220154
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913145836561679424, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913145836561679424, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913145836561679424, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913145836561679424, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913145836561679424, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913145836561679424, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913145836561679424, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913145836561679426, guid: 9928eedfc7371d948be2e1500a941e64,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9928eedfc7371d948be2e1500a941e64, type: 3}
 --- !u!1 &1250215099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,7 +1095,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1887516443
 GameObject:
@@ -1069,7 +1143,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1887516447
 MonoBehaviour:
@@ -1142,7 +1216,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2147202519
 MonoBehaviour:
@@ -4134,6 +4208,7 @@ MonoBehaviour:
     type: 3}
   BulletSpawnPoint: {fileID: 7673487250551255389}
   CharacterPosition: {fileID: 7673487250551255329}
+  ShootSound: {fileID: 8300000, guid: 683a510ac74cdb04abb723abb37267c4, type: 3}
   BulletSpeed: 30
   FireRate: 0.5
   BulletDamage: 3
