@@ -10,6 +10,9 @@ public class XpManager : MonoBehaviour
 
     public int XpToNextLevel = 100;
 
+    [SerializeField]
+    private PanelCard _panelCard;
+
     public void AddXp(int xp)
     {
         CurrentXp += xp;
@@ -24,5 +27,6 @@ public class XpManager : MonoBehaviour
         CurrentLevel++;
         CurrentXp = 0;
         XpToNextLevel = (int)(XpToNextLevel * 1.5f);
+        _panelCard.DisplayBonusCardSelect();
     }
 }

@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
-	public float Speed;
+	private PlayerStats _stats;
     
 	private Animator anim;
 
@@ -24,7 +23,8 @@ public class PlayerController : MonoBehaviour
 		controller = GetComponent<CharacterController>();
         _shootHandler = GetComponent<ShootHandler>();
         anim = GetComponent<Animator>();
-	}
+        _stats = GetComponent<PlayerStats>();
+    }
 
 	public void FixedUpdate()
 	{
@@ -62,11 +62,11 @@ public class PlayerController : MonoBehaviour
 
         if (_isShooting is false)
         {
-			controller.Move(move.normalized * Time.fixedDeltaTime * Speed);
+			controller.Move(move.normalized * Time.fixedDeltaTime * _stats.Speed);
         }
 		else
         {
-            controller.Move(move.normalized * Time.fixedDeltaTime * Speed * 0.5f);
+            controller.Move(move.normalized * Time.fixedDeltaTime * _stats.Speed * 0.5f);
         }
 	}
 
