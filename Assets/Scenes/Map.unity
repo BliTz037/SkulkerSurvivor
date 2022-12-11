@@ -4455,7 +4455,7 @@ MonoBehaviour:
     type: 3}
   BulletSpawnPoint: {fileID: 1547815787}
   CharacterPosition: {fileID: 885507418}
-  ShootSound: {fileID: 0}
+  ShootSound: {fileID: 8300000, guid: 683a510ac74cdb04abb723abb37267c4, type: 3}
   BulletSpeed: 30
 --- !u!114 &885507423
 MonoBehaviour:
