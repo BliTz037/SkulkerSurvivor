@@ -836,7 +836,6 @@ GameObject:
   - component: {fileID: 1410340309}
   - component: {fileID: 1410340308}
   - component: {fileID: 1410340307}
-  - component: {fileID: 1410340306}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -864,28 +863,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1919.9979, y: 357.6455}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1410340306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410340303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59cd49a5bb97794eb1aa1a7562ec77f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CardSelectorPrefab: {fileID: 5885571728258267318, guid: 25177278c1c7ed04e9513aa16aeb5f27,
-    type: 3}
-  _cardsPrefab:
-  - {fileID: 3455865172430988118, guid: 41e876f0ed43f294282f9b9a9da23ad7, type: 3}
-  - {fileID: 3455865172430988118, guid: a2fd3fee35c2c614f9a1056c4ec64a70, type: 3}
-  - {fileID: 3455865172430988118, guid: 5a5a6c62dcac21d4397fda92a4d2bef1, type: 3}
-  - {fileID: 3455865172430988118, guid: 88e5b872d6d798044bcea8bd16717f34, type: 3}
-  - {fileID: 3455865172430988118, guid: 3acea35ff1c2a19478a4a57062711eaf, type: 3}
-  TimeDelayAnimation: 0.8
-  BoostManager: {fileID: 2147202519}
 --- !u!114 &1410340307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -990,6 +967,62 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1649060117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1649060119}
+  - component: {fileID: 1649060118}
+  m_Layer: 0
+  m_Name: CardSelectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1649060118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649060117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59cd49a5bb97794eb1aa1a7562ec77f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CardSelect: {fileID: 1421236082}
+  PanelTransform: {fileID: 1410340304}
+  CardSelectorPrefab: {fileID: 5885571728258267318, guid: 25177278c1c7ed04e9513aa16aeb5f27,
+    type: 3}
+  _cardsPrefab:
+  - {fileID: 3455865172430988118, guid: 41e876f0ed43f294282f9b9a9da23ad7, type: 3}
+  - {fileID: 3455865172430988118, guid: a2fd3fee35c2c614f9a1056c4ec64a70, type: 3}
+  - {fileID: 3455865172430988118, guid: 5a5a6c62dcac21d4397fda92a4d2bef1, type: 3}
+  - {fileID: 3455865172430988118, guid: 88e5b872d6d798044bcea8bd16717f34, type: 3}
+  - {fileID: 3455865172430988118, guid: 3acea35ff1c2a19478a4a57062711eaf, type: 3}
+  TimeDelayAnimation: 0.8
+  BoostManager: {fileID: 2147202519}
+--- !u!4 &1649060119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649060117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1887516443
 GameObject:
   m_ObjectHideFlags: 0

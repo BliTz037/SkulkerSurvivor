@@ -5,8 +5,8 @@ public class CardSelector : MonoBehaviour, IPointerClickHandler
 {
     public void OnPointerClick(PointerEventData eventData)
     {
-        GameObject parent = transform.parent.gameObject;
+        GameObject cardSelectManager = GameObject.Find("CardSelectManager");
 
-        parent.GetComponent<PanelCard>().SelectCard(transform.GetChild(0).gameObject);
+        cardSelectManager.GetComponent<PanelCard>().SelectCard(transform.GetChild(0).gameObject);
     }
 }
