@@ -6,6 +6,9 @@ public class BoostManager : MonoBehaviour
     [SerializeField]
     private BoostType[] _boostTypes = { BoostType.Life, BoostType.Speed, BoostType.AttackSpeed, BoostType.Damage, BoostType.SpecialAttack };
 
+    [SerializeField]
+    private PlayerStats _stats;
+
     public BoostType[] GenerateRandomBoosts()
     {
         BoostType[] boosts = new BoostType[2];
@@ -52,14 +55,22 @@ public class BoostManager : MonoBehaviour
         switch (boost)
         {
             case BoostType.Life:
+                _stats.Hp += 1;
                 break;
             case BoostType.Speed:
+                _stats.Speed *= 1.1f;
                 break;
             case BoostType.AttackSpeed:
+                _stats.FireRate *= 0.9f;
                 break;
             case BoostType.Damage:
+                _stats.Damage += 1;
                 break;
             case BoostType.SpecialAttack:
+                if (_stats.SpecialAttack == 0)
+                    _stats.SpecialAttack = 2;
+                else
+                    _stats.SpecialAttack += 1;
                 break;
             default:
                 Debug.LogError("Invalid boost type: " + boost);

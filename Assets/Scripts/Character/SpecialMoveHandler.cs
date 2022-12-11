@@ -3,31 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpecialMoveHandler : MonoBehaviour
-{ 
+{
     public GameObject BulletPrefab;
 
     public Transform BulletSpawnPoint;
 
     public Transform CharacterPosition;
 
-    public float AttackRate = 1.5f;
-
-    public int NumberBullets = 0;
-
     public float BulletSpeed = 30f;
-
-    public float BulletDamage = 1f;
-
     private float _nextAttackTime;
+
+    private PlayerStats _stats;
+
+    public void Awake()
+    {
+        _stats = GetComponent<PlayerStats>();
+    }
 
     public void Update()
     {
         if (Time.time > _nextAttackTime)
         {
-            _nextAttackTime = Time.time + AttackRate;
+            _nextAttackTime = Time.time + _stats.FireRate * 3;
 
-            if (NumberBullets > 0)
-                SpecialShoot(NumberBullets);
+            if (_stats.SpecialAttack > 0)
+                SpecialShoot(_stats.SpecialAttack);
         }
     }
 

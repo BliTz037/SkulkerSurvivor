@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class PanelCard : MonoBehaviour
 {
     public GameObject CardSelect;
@@ -17,11 +16,6 @@ public class PanelCard : MonoBehaviour
     private BoostType _boostTypeSelected;
     private List<GameObject> _instantiateCards = new();
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        DisplayBonusCardSelect();
-    }
 
     public void SelectCard(GameObject card)
     {
@@ -31,7 +25,7 @@ public class PanelCard : MonoBehaviour
         CardSelect.SetActive(false);
     }
 
-    void ClearCards()
+    private void ClearCards()
     {
         foreach(GameObject card in _instantiateCards)
         {
@@ -40,7 +34,7 @@ public class PanelCard : MonoBehaviour
         _instantiateCards.Clear();
     }
 
-    void DisplayBonusCardSelect()
+    public void DisplayBonusCardSelect()
     {
         List<GameObject> cards = new();
 
