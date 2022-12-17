@@ -55,6 +55,7 @@ public class BoostManager : MonoBehaviour
         switch (boost)
         {
             case BoostType.Life:
+                _stats.MaxHp += 1;
                 _stats.Hp += 1;
                 break;
             case BoostType.Speed:
@@ -68,9 +69,9 @@ public class BoostManager : MonoBehaviour
                 break;
             case BoostType.SpecialAttack:
                 if (_stats.SpecialAttack == 0)
-                    _stats.SpecialAttack = 2;
+                    _stats.SpecialAttack = 3;
                 else
-                    _stats.SpecialAttack += 1;
+                    _stats.SpecialAttack += 2;
                 break;
             default:
                 Debug.LogError("Invalid boost type: " + boost);

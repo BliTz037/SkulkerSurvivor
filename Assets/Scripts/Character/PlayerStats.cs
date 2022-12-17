@@ -10,4 +10,14 @@ public class PlayerStats : MonoBehaviour
     public float Damage = 1;
     public int SpecialAttack = 0;
     public float FireRate = 0.5f;
+
+    public void Reset()
+    {
+        Speed = 10;
+        MaxHp = 5;
+        Hp = 5;
+        Damage = 1;
+        SpecialAttack = 0;
+        FireRate = 0.5f;
+    }
 }

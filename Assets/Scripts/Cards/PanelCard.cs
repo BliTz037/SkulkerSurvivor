@@ -23,6 +23,7 @@ public class PanelCard : MonoBehaviour
         BoostManager.ApplyBoost(_boostTypeSelected);
         ClearCards();
         CardSelect.SetActive(false);
+        ChangeGameState(false);
     }
 
     private void ClearCards()
@@ -50,6 +51,19 @@ public class PanelCard : MonoBehaviour
             GameObject newCard = Instantiate(CardSelectorPrefab, PanelTransform);
             Instantiate(cards[i], newCard.transform);
             _instantiateCards.Add(newCard);
+        }
+        ChangeGameState(true);
+    }
+
+    private void ChangeGameState(bool isDisplaying)
+    {
+        if (isDisplaying)
+        {
+            StateManager.Instance().CurrentState = State.LevelUp;
+        }
+        else
+        {
+            StateManager.Instance().CurrentState = State.Game;
         }
     }
 }

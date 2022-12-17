@@ -26,7 +26,14 @@ public class XpManager : MonoBehaviour
     {
         CurrentLevel++;
         CurrentXp = 0;
-        XpToNextLevel = (int)(XpToNextLevel * 1.5f);
+        XpToNextLevel = (int)(XpToNextLevel * 1.25f);
         _panelCard.DisplayBonusCardSelect();
+    }
+
+    public void Reset()
+    {
+        CurrentLevel = 1;
+        CurrentXp = 0;
+        XpToNextLevel = 100;
     }
 }
