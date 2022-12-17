@@ -9,16 +9,16 @@ public class UIController : MonoBehaviour
 
     public void MasterVolume()
     {
-        AudioManager.Instance.MasterVolume(_masterSlider.value);
+        SoundManager.Instance.ChangeMasterVolume(_masterSlider.value);
     }
 
     public void MusicVolume()
     {
-        AudioManager.Instance.MusicVolume(_musicSlider.value);
+        SoundManager.Instance.ChangeMusicVolume(_musicSlider.value);
     }
 
     public void SFXVolume()
     {
-        AudioManager.Instance.SFXVolume(_sfxSlider.value);
+        SoundManager.Instance.ChangeEffectsVolume(_sfxSlider.value);
     }
 }
