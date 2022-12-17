@@ -620,7 +620,6 @@ GameObject:
   - component: {fileID: 464679891481412613}
   - component: {fileID: 464679891481412614}
   - component: {fileID: 464679891481412615}
-  - component: {fileID: 464679891481412608}
   - component: {fileID: 464679891481412609}
   m_Layer: 0
   m_Name: DragonSoulEaterRedHP
@@ -677,8 +676,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.6, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 3.3340077, y: 5.990119, z: 8.346535}
+  m_Center: {x: -0.24280334, y: 3.1950593, z: -0.9269371}
 --- !u!195 &464679891481412614
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -689,7 +688,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -713,21 +712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee3175591e5d5f4586e2fe3ccd4242d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 1
---- !u!114 &464679891481412608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3527852070418794638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef313f71848719f4cb598bde36c37cc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  XpPrefab: {fileID: 7729107858098069834, guid: 7a79e9feabd3d0e4db3d33ef8fc4cc3c,
-    type: 3}
+  Health: 5
 --- !u!114 &464679891481412609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,8 +733,7 @@ MonoBehaviour:
   WhatIsPlayer:
     serializedVersion: 2
     m_Bits: 0
-  timeDelayAttack: 0
-  Damage: 0
+  Damage: 3
 --- !u!1 &3693297761447829292
 GameObject:
   m_ObjectHideFlags: 0

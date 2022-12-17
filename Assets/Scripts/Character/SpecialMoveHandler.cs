@@ -22,6 +22,11 @@ public class SpecialMoveHandler : MonoBehaviour
 
     public void Update()
     {
+        if (StateManager.Instance().CurrentState != State.Game)
+        {
+            return;
+        }
+
         if (Time.time > _nextAttackTime)
         {
             _nextAttackTime = Time.time + _stats.FireRate * 3;

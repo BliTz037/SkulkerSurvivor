@@ -1705,7 +1705,6 @@ GameObject:
   - component: {fileID: 5873137846620441507}
   - component: {fileID: 5873137846620441508}
   - component: {fileID: 5873137846620441509}
-  - component: {fileID: 5873137846620441510}
   - component: {fileID: 5873137846620441511}
   m_Layer: 0
   m_Name: Orc_Wolfrider
@@ -1762,8 +1761,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.6, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 1, y: 2.724303, z: 2.770697}
+  m_Center: {x: 0, y: 1.5621505, z: -0.13812208}
 --- !u!195 &5873137846620441508
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1798,21 +1797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee3175591e5d5f4586e2fe3ccd4242d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 1
---- !u!114 &5873137846620441510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5873137846620441512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef313f71848719f4cb598bde36c37cc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  XpPrefab: {fileID: 7729107858098069834, guid: 7a79e9feabd3d0e4db3d33ef8fc4cc3c,
-    type: 3}
+  Health: 2
 --- !u!114 &5873137846620441511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1833,8 +1818,7 @@ MonoBehaviour:
   WhatIsPlayer:
     serializedVersion: 2
     m_Bits: 0
-  timeDelayAttack: 0
-  Damage: 0
+  Damage: 1
 --- !u!1 &5873137846620448300
 GameObject:
   m_ObjectHideFlags: 0

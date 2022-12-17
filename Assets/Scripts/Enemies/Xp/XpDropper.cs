@@ -6,8 +6,25 @@ public class XpDropper : MonoBehaviour
 {
     public GameObject XpPrefab;
 
-    public void DropXp()
+    private List<GameObject> _spawnedXps;
+
+    public void Awake()
     {
-        Instantiate(XpPrefab, transform.position, Quaternion.identity);
+        _spawnedXps = new List<GameObject>();
+    }
+
+    public void DropXp(Vector3 position)
+    {
+        var xp = Instantiate(XpPrefab, position, Quaternion.identity);
+        _spawnedXps.Add(xp);
+    }
+
+    public void Reset()
+    {
+        foreach (var xp in _spawnedXps)
+        {
+            Destroy(xp);
+        }
+        _spawnedXps.Clear();
     }
 }

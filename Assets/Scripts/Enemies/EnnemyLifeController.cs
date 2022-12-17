@@ -5,12 +5,12 @@ using UnityEngine;
 public class EnnemyLifeController : MonoBehaviour
 {
     public float Health = 1.0f;
-
+    
     private XpDropper _xpDropper;
 
     public void Awake()
     {
-        _xpDropper = GetComponent<XpDropper>();
+        _xpDropper = FindObjectOfType<XpDropper>();
     }
     
     public void TakeDamage(float damage)
@@ -25,6 +25,6 @@ public class EnnemyLifeController : MonoBehaviour
     private void OnEnemyDeath()
     {
         Destroy(gameObject);
-        _xpDropper.DropXp();
+        _xpDropper.DropXp(gameObject.transform.position);
     }
 }
